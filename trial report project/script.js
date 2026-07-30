@@ -1,17 +1,17 @@
 
-fetch("data.json")
-.then(res => res.json())
+fetch("data.json")            //fetch is udes to load data from the file or a server.
+.then(res => res.json())       //.then is the promise res.json convert the response object in to javascript object.
 .then(data => {
 
     const tbody = document.querySelector("tbody");
     const total = document.getElementById("grandTotal");
 
-const exportBtn = document.getElementById("exportBtn");
+    const exportBtn = document.getElementById("exportBtn");
 
     let currentPage = 1;
     const totalPages = 3;
 
-    function loadPage(page) {
+    function loadPage(page) {       //whenever you call the function it loads new page.
 
         tbody.innerHTML = "";
 
@@ -36,9 +36,9 @@ const exportBtn = document.getElementById("exportBtn");
             end = data.length; // Remaining 12 districts
         }
 
-        const pageData = data.slice(start, end);
+        const pageData = data.slice(start, end);  //get only page data if page as 1 to 10 data it should contaion only 1 to 10 data.
 
-        pageData.forEach((item, index) => {
+        pageData.forEach((item, index) => {        //loof through districts.
 
             users += item.users;
             started += item.started;
@@ -56,7 +56,7 @@ const exportBtn = document.getElementById("exportBtn");
 
             tbody.innerHTML += `
                 <tr>
-                    <td>${start + index + 1}</td>
+                    <td>${start + index + 1}</td>                           
                     <td>${item.district}</td>
                     <td>${item.users}</td>
                     <td>${item.started}</td>
