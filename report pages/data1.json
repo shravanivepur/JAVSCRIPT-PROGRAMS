@@ -1,0 +1,92 @@
+[
+  {
+    "district": "Rangareddy",
+    "users": 722,
+    "started": 722,
+    "notStarted": 0,
+    "percentage": 100.0,
+    "ag": 6151,
+    "groups": 763
+  },
+  {
+    "district": "Peddapalli",
+    "users": 442,
+    "started": 442,
+    "notStarted": 0,
+    "percentage": 100.0,
+    "ag": 3573,
+    "groups": 574
+  },
+  {
+    "district": "Karimnagar",
+    "users": 506,
+    "started": 506,
+    "notStarted": 0,
+    "percentage": 100.0,
+    "ag": 3187,
+    "groups": 402
+  },
+  {
+    "district": "Jangoan",
+    "users": 447,
+    "started": 447,
+    "notStarted": 0,
+    "percentage": 100.0,
+    "ag": 3468,
+    "groups": 622
+  },
+  {
+    "district": "Jagitial",
+    "users": 557,
+    "started": 556,
+    "notStarted": 1,
+    "percentage": 99.8,
+    "ag": 4068,
+    "groups": 599
+  },
+  {
+    "district": "Sangareddy",
+    "users": 609,
+    "started": 606,
+    "notStarted": 3,
+    "percentage": 99.5,
+    "ag": 5681,
+    "groups": 788
+  },
+  {
+    "district": "Nizamabad",
+    "users": 797,
+    "started": 789,
+    "notStarted": 8,
+    "percentage": 99.0,
+    "ag": 6745,
+    "groups": 1061
+  },
+  {
+    "district": "Suryapet",
+    "users": 571,
+    "started": 565,
+    "notStarted": 6,
+    "percentage": 98.9,
+    "ag": 4192,
+    "groups": 683
+  },
+  {
+    "district": "Nalgonda",
+    "users": 1121,
+    "started": 1102,
+    "notStarted": 19,
+    "percentage": 98.3,
+    "ag": 6086,
+    "groups": 1381
+  },
+  {
+    "district": "Jayashankar",
+    "users": 362,
+    "started": 355,
+    "notStarted": 7,
+    "percentage": 98.1,
+    "ag": 2225,
+    "groups": 441
+  }
+]
