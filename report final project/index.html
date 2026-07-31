@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SNEHA DISTRICT REPORTS</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
+
+<h1>STATUS OF SNEHA APP</h1>
+
+<h3>AG GIRLS REGISTRATIONS</h3>
+<button id ="exportBtn">EXPORT TO EXCEL</button>
+
+
+</div>
+
+<div class="table-container">
+
+<table id="reportTable">
+
+<thead>
+
+<tr>
+
+<th>S.No</th>
+
+<th>District Name</th>
+
+<th>Total VOA Users</th>
+
+<th>Total VOAs Started Registrations</th>
+
+<th>Total VOAs Not Started Registrations</th>
+
+<th>% Started Using APP</th>
+
+<th>Total AG Registrations</th>
+
+<th>Total Groups Created</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+</tbody>
+
+<tfoot>
+
+<tr id="grandTotal"></tr>
+
+</tfoot>
+
+</table>
+<div class="pagination">
+    <button id="prevBtn">Previous</button>
+    <span id="pageInfo"></span>
+    <button id="nextBtn">Next</button>
+</div>
+
+</div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
