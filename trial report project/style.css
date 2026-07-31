@@ -30,15 +30,11 @@ overflow:hidden;
 }
 
 .header{
-
+min-height:min-content;
 background:linear-gradient(90deg,#1565c0,#1e88e5);
-
 color:white;
-
-padding:20px;
-
+padding: 20px;
 text-align:center;
-
 }
 
 .header h1{
@@ -189,4 +185,24 @@ font-weight:bold;
 
 #exportBtn:hover{
     background:#146c43;
+}
+.report-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin: 15px 0;
+    
+}
+
+.title-section h1{
+    margin: 0;
+    font-size: 28px;
+    color:white;
+    padding-top: 50px;
+}
+
+.title-section h3{
+    margin: 5px 0 0;
+    font-size: 18px;
+    color:white;
+    font-weight: 500;
 }
