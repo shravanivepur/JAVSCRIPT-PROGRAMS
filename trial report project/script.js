@@ -18,7 +18,7 @@ fetch("data.json")            //fetch is udes to load data from the file or a se
         tbody.innerHTML = "";
 
         
-        data.forEach((item, index) => {        //loof through districts.
+        data.forEach((item, index) => {        //loop through districts.
 
             users += item.users;
             started += item.started;
@@ -48,13 +48,20 @@ fetch("data.json")            //fetch is udes to load data from the file or a se
         });
 
         const percent = ((started / users) * 100).toFixed(1);
+     let totalColor = "green";
+
+if (percent < 90)
+    totalColor = "orange";
+
+if (percent < 80)
+    totalColor = "red";
 
         total.innerHTML = `
             <td colspan="2"><b>Grand Total</b></td>
             <td>${users}</td>
             <td>${started}</td>
             <td>${notStarted}</td>
-            <td>${percent}%</td>
+            <td class="${totalColor}">${percent}%</td>
             <td>${ag}</td>
             <td>${groups}</td>
         `;
