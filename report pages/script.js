@@ -1,4 +1,4 @@
-fetch("data1.json")     //fetch data from data/json file/first it returns data as response object.
+fetch("data.json")     //fetch data from data/json file/first it returns data as response object.
 .then(res=>res.json())    //it converts in to javascript object. 
 .then(data=>{           //get data and store in one vriable that is (data).
 

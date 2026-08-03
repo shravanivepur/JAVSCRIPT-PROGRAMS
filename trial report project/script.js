@@ -3,17 +3,11 @@ fetch("data.json")            //fetch is udes to load data from the file or a se
 .then(res => res.json())       //.then is the promise res.json convert the response object in to javascript object.
 .then(data => {
 
+
     const tbody = document.querySelector("tbody");
     const total = document.getElementById("grandTotal");
-
     const exportBtn = document.getElementById("exportBtn");
 
-    let currentPage = 1;
-    const totalPages = 3;
-
-    function loadPage(page) {       //whenever you call the function it loads new page.
-
-        tbody.innerHTML = "";
 
         let users = 0;
         let started = 0;
@@ -21,24 +15,10 @@ fetch("data.json")            //fetch is udes to load data from the file or a se
         let ag = 0;
         let groups = 0;
 
-        let start, end;
+        tbody.innerHTML = "";
 
-        if (page === 1) {
-            start = 0;
-            end = 10;
-        }
-        else if (page === 2) {
-            start = 10;
-            end = 20;
-        }
-        else {
-            start = 20;
-            end = data.length; // Remaining 12 districts
-        }
-
-        const pageData = data.slice(start, end);  //get only page data if page as 1 to 10 data it should contaion only 1 to 10 data.
-
-        pageData.forEach((item, index) => {        //loof through districts.
+        
+        data.forEach((item, index) => {        //loof through districts.
 
             users += item.users;
             started += item.started;
@@ -56,7 +36,7 @@ fetch("data.json")            //fetch is udes to load data from the file or a se
 
             tbody.innerHTML += `
                 <tr>
-                    <td>${start + index + 1}</td>                           
+                    <td>${index + 1}</td>                           
                     <td>${item.district}</td>
                     <td>${item.users}</td>
                     <td>${item.started}</td>
@@ -64,15 +44,13 @@ fetch("data.json")            //fetch is udes to load data from the file or a se
                     <td class="${color}">${item.percentage}%</td>
                     <td>${item.ag}</td>
                     <td>${item.groups}</td>
-                </tr>
-
-            `;
+                </tr>`;
         });
 
-        let percent = ((started / users) * 100).toFixed(1);
+        const percent = ((started / users) * 100).toFixed(1);
 
         total.innerHTML = `
-            <td colspan="2"><b>Page Total</b></td>
+            <td colspan="2"><b>Grand Total</b></td>
             <td>${users}</td>
             <td>${started}</td>
             <td>${notStarted}</td>
@@ -81,54 +59,29 @@ fetch("data.json")            //fetch is udes to load data from the file or a se
             <td>${groups}</td>
         `;
 
-        document.getElementById("pageInfo").textContent =
-            `Page ${page} of ${totalPages}`;
+       //export to excel
+        exportBtn.addEventListener("click", ()=> {
 
-        document.getElementById("prevBtn").disabled = (page === 1);
-        document.getElementById("nextBtn").disabled = (page === totalPages);
-    }
+        const excelData = data.map((item, index) => ({
+            "S.No": index + 1,
+            "District Name": item.district,
+            "Total VOA Users": item.users,
+            "Total VOAs Started Registrations": item.started,
+            "Total VOAs Not Started Registrations": item.notStarted,
+            "% Started Using APP": item.percentage + "%",
+            "Total AG Registrations": item.ag,
+            "Total Groups Created": item.groups
+        }));
 
-    loadPage(currentPage);
+        const worksheet = XLSX.utils.json_to_sheet(excelData);
+        const workbook = XLSX.utils.book_new();
 
-    document.getElementById("nextBtn").addEventListener("click", () => {
-        if (currentPage < totalPages) {
-            currentPage++;
-            loadPage(currentPage);
-        }
+        XLSX.utils.book_append_sheet(workbook, worksheet, "SNEHA Dashboard");
+
+        XLSX.writeFile(workbook, "SNEHA_Dashboard_Report.xlsx");
     });
 
-    document.getElementById("prevBtn").addEventListener("click", () => {
-        if (currentPage > 1) {
-            currentPage--;
-            loadPage(currentPage);
-        }
-    });
-exportBtn.addEventListener("click", function () {
-
-    const excelData = data.map((item, index) => ({
-        "S.No": index + 1,
-        "District Name": item.district,
-        "Total VOA Users": item.users,
-        "Total VOAs Started Registrations": item.started,
-        "Total VOAs Not Started Registrations": item.notStarted,
-        "% Started Using APP": item.percentage,
-        "Total AG Registrations": item.ag,
-        "Total Groups Created": item.groups
-    }));
-
-    const worksheet = XLSX.utils.json_to_sheet(excelData);
-
-    const workbook = XLSX.utils.book_new();
-
-    XLSX.utils.book_append_sheet(workbook, worksheet, "SNEHA Dashboard");
-
-    XLSX.writeFile(workbook, "SNEHA_Dashboard_Report.xlsx");
-
 });
-
-
-});
-
 
 
 
