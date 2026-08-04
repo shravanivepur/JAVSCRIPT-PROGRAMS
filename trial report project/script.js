@@ -1,32 +1,34 @@
 
-fetch("data.json")            //fetch is udes to load data from the file or a server.
+fetch("data.json")            //fetch is used to load data from the file or a server.
 .then(res => res.json())       //.then is the promise res.json convert the response object in to javascript object.
 .then(data => {
 
-
+ //select html elements
     const tbody = document.querySelector("tbody");
     const total = document.getElementById("grandTotal");
     const exportBtn = document.getElementById("exportBtn");
 
-
+  //variables.
         let users = 0;
         let started = 0;
         let notStarted = 0;
         let ag = 0;
         let groups = 0;
-
+    
+        //clear old rows before adding new one.
         tbody.innerHTML = "";
 
-        
-        data.forEach((item, index) => {        //loop through districts.
+        //loop through every district.
+        data.forEach((item, index) => {        //loop through districts.this rune once for every dist.
 
-            users += item.users;
+            users += item.users;             //example:0+722  722+442 etc.
             started += item.started;
             notStarted += item.notStarted;
             ag += item.ag;
             groups += item.groups;
 
-            let color = "green";
+            //color logic
+            let color = "green";            //default color.
 
             if (item.percentage < 90)
                 color = "orange";
@@ -34,6 +36,7 @@ fetch("data.json")            //fetch is udes to load data from the file or a se
             if (item.percentage < 80)
                 color = "red";
 
+            //adding rows 
             tbody.innerHTML += `
                 <tr>
                     <td>${index + 1}</td>                           
@@ -47,15 +50,18 @@ fetch("data.json")            //fetch is udes to load data from the file or a se
                 </tr>`;
         });
 
-        const percent = ((started / users) * 100).toFixed(1);
-     let totalColor = "green";
 
-if (percent < 90)
+        //grand percentage.
+    const percent = ((started / users) * 100).toFixed(1);
+    let totalColor = "green";
+
+    if (percent < 90)
     totalColor = "orange";
 
 if (percent < 80)
     totalColor = "red";
-
+       
+//footer
         total.innerHTML = `
             <td colspan="2"><b>Grand Total</b></td>
             <td>${users}</td>
@@ -80,12 +86,13 @@ if (percent < 80)
             "Total Groups Created": item.groups
         }));
 
-        const worksheet = XLSX.utils.json_to_sheet(excelData);
-        const workbook = XLSX.utils.book_new();
+          //create worksheet.
+        const worksheet = XLSX.utils.json_to_sheet(excelData);        //convert js in to excel sheet.
+        const workbook = XLSX.utils.book_new();                    //create workbook.
 
-        XLSX.utils.book_append_sheet(workbook, worksheet, "SNEHA Dashboard");
+        XLSX.utils.book_append_sheet(workbook, worksheet, "SNEHA Dashboard");  //add sheet.
 
-        XLSX.writeFile(workbook, "SNEHA_Dashboard_Report.xlsx");
+        XLSX.writeFile(workbook, "SNEHA_Dashboard_Report.xlsx");       //download the sheet.
     });
 
 });
