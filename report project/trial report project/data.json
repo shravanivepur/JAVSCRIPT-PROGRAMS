@@ -1,0 +1,290 @@
+[
+  {
+    "district": "Rangareddy",
+    "users": 722,
+    "started": 722,
+    "notStarted": 0,
+    "percentage": 100.0,
+    "ag": 6151,
+    "groups": 763
+  },
+  {
+    "district": "Peddapalli",
+    "users": 442,
+    "started": 442,
+    "notStarted": 0,
+    "percentage": 100.0,
+    "ag": 3573,
+    "groups": 574
+  },
+  {
+    "district": "Karimnagar",
+    "users": 506,
+    "started": 506,
+    "notStarted": 0,
+    "percentage": 100.0,
+    "ag": 3187,
+    "groups": 402
+  },
+  {
+    "district": "Jangoan",
+    "users": 447,
+    "started": 447,
+    "notStarted": 0,
+    "percentage": 100.0,
+    "ag": 3468,
+    "groups": 622
+  },
+  {
+    "district": "Jagitial",
+    "users": 557,
+    "started": 556,
+    "notStarted": 1,
+    "percentage": 99.8,
+    "ag": 4068,
+    "groups": 599
+  },
+  {
+    "district": "Sangareddy",
+    "users": 609,
+    "started": 606,
+    "notStarted": 3,
+    "percentage": 99.5,
+    "ag": 5681,
+    "groups": 788
+  },
+  {
+    "district": "Nizamabad",
+    "users": 797,
+    "started": 789,
+    "notStarted": 8,
+    "percentage": 99.0,
+    "ag": 6745,
+    "groups": 1061
+  },
+  {
+    "district": "Suryapet",
+    "users": 571,
+    "started": 565,
+    "notStarted": 6,
+    "percentage": 98.9,
+    "ag": 4192,
+    "groups": 683
+  },
+  {
+    "district": "Nalgonda",
+    "users": 1121,
+    "started": 1102,
+    "notStarted": 19,
+    "percentage": 98.3,
+    "ag": 6086,
+    "groups": 1381
+  },
+  {
+    "district": "Jayashankar",
+    "users": 362,
+    "started": 355,
+    "notStarted": 7,
+    "percentage": 98.1,
+    "ag": 2225,
+    "groups": 441
+  },
+  {
+    "district": "Warangal Urban",
+    "users": 394,
+    "started": 385,
+    "notStarted": 9,
+    "percentage": 97.7,
+    "ag": 2764,
+    "groups": 457
+  },
+  {
+    "district": "Kamareddy",
+    "users": 694,
+    "started": 676,
+    "notStarted": 18,
+    "percentage": 97.4,
+    "ag": 4489,
+    "groups": 657
+  },
+  {
+    "district": "Medak",
+    "users": 515,
+    "started": 501,
+    "notStarted": 14,
+    "percentage": 97.3,
+    "ag": 3610,
+    "groups": 551
+  },
+  {
+    "district": "Mahabubnagar",
+    "users": 458,
+    "started": 442,
+    "notStarted": 16,
+    "percentage": 96.5,
+    "ag": 3924,
+    "groups": 403
+  },
+  {
+    "district": "Medchal-Malkajgiri",
+    "users": 40,
+    "started": 38,
+    "notStarted": 2,
+    "percentage": 95.0,
+    "ag": 338,
+    "groups": 117
+  },
+  {
+    "district": "Jogulamba",
+    "users": 304,
+    "started": 287,
+    "notStarted": 17,
+    "percentage": 94.4,
+    "ag": 3697,
+    "groups": 426
+  },
+  {
+    "district": "Rajanna",
+    "users": 409,
+    "started": 385,
+    "notStarted": 24,
+    "percentage": 94.1,
+    "ag": 2631,
+    "groups": 253
+  },
+  {
+    "district": "Narayanpet",
+    "users": 331,
+    "started": 308,
+    "notStarted": 23,
+    "percentage": 93.1,
+    "ag": 2539,
+    "groups": 379
+  },
+  {
+    "district": "Mahabubabad",
+    "users": 662,
+    "started": 614,
+    "notStarted": 48,
+    "percentage": 92.7,
+    "ag": 5040,
+    "groups": 790
+  },
+  {
+    "district": "Warangal Rural",
+    "users": 418,
+    "started": 379,
+    "notStarted": 39,
+    "percentage": 90.7,
+    "ag": 2603,
+    "groups": 437
+  },
+  {
+    "district": "Badradri",
+    "users": 924,
+    "started": 836,
+    "notStarted": 88,
+    "percentage": 90.5,
+    "ag": 4861,
+    "groups": 593
+  },
+  {
+    "district": "Mancherial",
+    "users": 457,
+    "started": 408,
+    "notStarted": 49,
+    "percentage": 89.3,
+    "ag": 2497,
+    "groups": 476
+  },
+  {
+    "district": "Nagarkurnool",
+    "users": 601,
+    "started": 534,
+    "notStarted": 67,
+    "percentage": 88.9,
+    "ag": 3841,
+    "groups": 495
+  },
+  {
+    "district": "Siddipet",
+    "users": 710,
+    "started": 624,
+    "notStarted": 86,
+    "percentage": 87.9,
+    "ag": 5398,
+    "groups": 738
+  },
+  {
+    "district": "Adilabad",
+    "users": 543,
+    "started": 477,
+    "notStarted": 66,
+    "percentage": 87.8,
+    "ag": 4135,
+    "groups": 611
+  },
+  {
+    "district": "Mulugu",
+    "users": 340,
+    "started": 294,
+    "notStarted": 46,
+    "percentage": 86.5,
+    "ag": 2072,
+    "groups": 274
+  },
+  {
+    "district": "Wanaparthy",
+    "users": 335,
+    "started": 288,
+    "notStarted": 47,
+    "percentage": 86.0,
+    "ag": 2456,
+    "groups": 334
+  },
+  {
+    "district": "Yadadri Bhongir",
+    "users": 542,
+    "started": 453,
+    "notStarted": 89,
+    "percentage": 83.6,
+    "ag": 3202,
+    "groups": 419
+  },
+  {
+    "district": "Vikarabad",
+    "users": 622,
+    "started": 472,
+    "notStarted": 150,
+    "percentage": 75.9,
+    "ag": 3923,
+    "groups": 503
+  },
+  {
+    "district": "Khammam",
+    "users": 934,
+    "started": 683,
+    "notStarted": 251,
+    "percentage": 73.1,
+    "ag": 4745,
+    "groups": 462
+  },
+  {
+    "district": "Nirmal",
+    "users": 504,
+    "started": 331,
+    "notStarted": 173,
+    "percentage": 65.7,
+    "ag": 3325,
+    "groups": 394
+  },
+  {
+    "district": "Komaram Bheem",
+    "users": 374,
+    "started": 208,
+    "notStarted": 166,
+    "percentage": 55.6,
+    "ag": 1796,
+    "groups": 217
+  }
+]

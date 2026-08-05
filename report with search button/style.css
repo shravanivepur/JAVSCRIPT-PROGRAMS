@@ -161,7 +161,9 @@ font-weight:bold;
     background:#146c43;
 }
 .report-actions {
-    margin: 15px 0;   
+    display: flex;
+    gap:10px; 
+    align-items:center; 
 }
 
 .title-section{
@@ -181,4 +183,15 @@ font-weight:bold;
     font-size: 18px;
     color:white;
     
+}
+#searchDistrict{
+    padding:6px;
+    width:200px;
+    border:1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+#searchDistrict:focus{
+    outline: none;
+    border-color: #c03715;
 }
