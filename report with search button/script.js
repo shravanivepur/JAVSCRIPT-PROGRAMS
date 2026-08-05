@@ -68,11 +68,18 @@ fetch("data.json")
     // Display all data initially
     displayTable(data);
 
-    // Search District
+    // Search District  
+    //searchInput is the search text box.
+    //"keyup" means the function runs every time the user releases a key after typing.
     searchInput.addEventListener("keyup", function () {
-
+     
+        //this refers to search inputbox.
+        //this.value stores the users value.
+        //it converts all letters to lower case.
         const keyword = this.value.toLowerCase();
-
+ 
+        //filter checks every object in the data array.
+        //include thsi checks whether district contains the searched word.
         const filteredData = data.filter(item =>
             item.district.toLowerCase().includes(keyword)
         );
