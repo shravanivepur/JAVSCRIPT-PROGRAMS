@@ -42,7 +42,10 @@ fetch("data.json")
             tbody.innerHTML += `
                 <tr>
                     <td>${index + 1}</td>
-                    <td>${item.district}</td>
+                    <td>
+                    <a href="#" onclick="showMandals('${item.district}')">
+                    ${item.district}
+                    </td>
                     <td>${item.users}</td>
                     <td>${item.started}</td>
                     <td>${item.notStarted}</td>
@@ -132,3 +135,10 @@ fetch("data.json")
     });
 
 });
+
+function showMandals(district){
+
+    window.location.href =
+        "mandals.html?district=" + encodeURIComponent(district);
+
+}

@@ -1,0 +1,155 @@
+[
+  {
+    "S.No":1,
+    "district": "Adilabad",
+    "mandal": "Adilabad Rural",
+    "users": 37,
+    "started": 33,
+    "ag": 280,
+    "groups": 47
+  },
+  {
+    "S.No":2,
+    "district": "Adilabad",
+    "mandal": "Bazarhathnoor",
+    "users": 41,
+    "started": 34,
+    "ag": 278,
+    "groups": 46
+  },
+  {
+    "S.No":3,
+    "district": "Adilabad",
+    "mandal": "Bela",
+    "users": 36,
+    "started": 32,
+    "ag": 242,
+    "groups": 22
+  },
+  {
+    "S.No":4,
+    "district": "Adilabad",
+    "mandal": "Bheempur",
+    "users": 23,
+    "started": 21,
+    "ag": 209,
+    "groups": 36
+  },
+  {
+    "S.No":5,
+    "district": "Adilabad",
+    "mandal": "Boath",
+    "users": 40,
+    "started": 26,
+    "ag": 202,
+    "groups": 34
+  },
+  {
+    "S.No":6,
+    "district": "Adilabad",
+    "mandal": "Gadiguda",
+    "users": 25,
+    "started": 20,
+    "ag": 192,
+    "groups": 35
+  },
+  {
+    "S.No":7,
+    "district": "Adilabad",
+    "mandal": "Gudihathnoor",
+    "users": 34,
+    "started": 29,
+    "ag": 281,
+    "groups": 36
+  },
+  {
+    "S.No":8,
+    "district": "Adilabad",
+    "mandal": "Ichoda",
+    "users": 43,
+    "started": 39,
+    "ag": 368,
+    "groups": 52
+  },
+  {
+    "S.No":9,
+    "district": "Adilabad",
+    "mandal": "Indervelly",
+    "users": 30,
+    "started": 28,
+    "ag": 225,
+    "groups": 33
+  },
+  {
+    "S.No":10,
+    "district": "Adilabad",
+    "mandal": "Jainad",
+    "users": 42,
+    "started": 38,
+    "ag": 264,
+    "groups": 43
+  },
+  {
+    "S.No":11,
+    "district": "Adilabad",
+    "mandal": "Mavala",
+    "users": 5,
+    "started": 5,
+    "ag": 43,
+    "groups": 5
+  },
+  {
+    "S.No":12,
+    "district": "Adilabad",
+    "mandal": "Narnoor",
+    "users": 37,
+    "started": 34,
+    "ag": 282,
+    "groups": 53
+  },
+  {
+    "S.No":13,
+    "district": "Adilabad",
+    "mandal": "Neradigonda",
+    "users": 34,
+    "started": 34,
+    "ag": 335,
+    "groups": 41
+  },
+  {
+    "S.No":14,
+    "district": "Adilabad",
+    "mandal": "Sirikonda",
+    "users": 20,
+    "started": 15,
+    "ag": 128,
+    "groups": 17
+  },
+  {
+    "S.No":15,
+    "district": "Adilabad",
+    "mandal": "Talamadugu",
+    "users": 28,
+    "started": 25,
+    "ag": 246,
+    "groups": 35
+  },
+  {
+    "S.No":16,
+    "district": "Adilabad",
+    "mandal": "Tamsi",
+    "users": 14,
+    "started": 14,
+    "ag": 163,
+    "groups": 21
+  },
+  {
+    "S.No":17,
+    "district": "Adilabad",
+    "mandal": "Utnoor",
+    "users": 54,
+    "started": 50,
+    "ag": 397,
+    "groups": 55
+  }
+]
